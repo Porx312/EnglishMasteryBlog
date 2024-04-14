@@ -10,9 +10,35 @@
     "menu cpage profile"
     ;
 }
-
+/* menu */
 .menu{
     grid-area: menu;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem 0;
+    padding: 2rem;
+}
+.menu nav{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+    justify-content: center;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-size: .6rem;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+
+.menu a:hover{
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    font-size: .6rem;
 }
 
 .content-page{
@@ -21,14 +47,89 @@
     background-color: rgb(23, 23, 24);
 }
 
-.profile-data{
-    grid-area: profile;
+.birrete{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
+.birrete img{
+    width: 100%;
+}
+.birrete h2{
+    color: white;
+    font-size: .6rem;
+    font-weight: bold;
+}
+
+
+/* PORFILE */
+.profile-data{
+    grid-area: profile;
+    color: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.data-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.data-profile h2{
+    font-weight: 300;
+    width: 80px;
+    font-size:1.4rem;
+}
+
+.data-profile h2 span{
+    font-weight: bold;
+}
+
+.stats-profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.stats-item{
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+
+}
+.stats-item h3{
+    font-size: .8rem;
+    color: rgb(114, 114, 114);
+}
+.stats-item .total-words{
+    border-left: 2px solid rgb(0, 255, 106);
+    padding: .2rem;
+}
+
+.img-profile{
+    width: 80px;
+    height: 80px;
+    border-radius: 360px;
+    background-color: green;
+    overflow: hidden;
+}
+.img-profile img{
+    width: 100%;
+    object-fit: cover;
+}
 .top-page{
     grid-area: tpage;
 
 }
+
+
+
+
 
 
 @media (max-width: 1100px) {
