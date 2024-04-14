@@ -1,0 +1,95 @@
+.card-login{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(0, 4%, 10%);
+    min-height: 80vh;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.card-login-card{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-right: 10rem;
+    gap: .8rem;
+    font-size: 1.4rem;
+
+}
+label{
+    color: #c6cccb;
+    font-size: 1rem;
+}
+.card-login input[type="text"]{
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+.card-login button{
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 0;
+    background-color: #038061;
+    color: white;
+    transition:all .2s ease ;
+    cursor: pointer;
+}
+
+.card-login button:hover{
+    background-color: #05aa81;
+
+}
+
+.notes{
+    min-width: 200px;
+    width: 500px;
+}
+
+@media (max-width: 1120px) {
+    .card-login {
+        display: flex; /* Asegura que los elementos se alineen horizontalmente */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        align-items: center; /* Centra verticalmente los elementos */
+        padding: 4rem;
+        min-height: 60vh;
+    }
+    .notes{
+        min-width: 200px;
+        width: 400px;
+    }
+    .card-login-card{
+        margin: 0;
+    font-size: 1rem;
+    }
+}
+
+
+
+@media (max-width: 620px) {
+    .card-login {
+        display: flex; /* Asegura que los elementos se alineen horizontalmente */
+        justify-content: center; /* Centra horizontalmente los elementos */
+        align-items: center; /* Centra verticalmente los elementos */
+        padding: 4rem;
+    }
+    .card-login-card{
+        margin: 0;
+    font-size: .7rem;
+    }
+    .card-login input[type="text"]{
+        padding: .7rem .4rem;
+        font-size: .7rem;
+        border-radius: 10px;
+    }
+    .card-login button{
+        padding: .7rem .4rem;
+        border-radius: 10px;
+        border: 0;
+        background-color: #038061;
+        color: white;
+        transition:all .2s ease ;
+        cursor: pointer;
+    }
+}
